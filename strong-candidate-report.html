@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>MDMGL AI Acquisitions Report</title>
+</head>
+<body style="margin:0;padding:0;background:#f4f6f8;font-family:Arial,Helvetica,sans-serif;color:#1f2937;">
+
+  <div style="max-width:720px;margin:0 auto;background:#ffffff;">
+
+    <div style="background:#111827;color:#ffffff;padding:28px 32px;">
+      <div style="font-size:14px;letter-spacing:1px;color:#93c5fd;">MDMGL AI ACQUISITIONS REPORT</div>
+      <h1 style="margin:10px 0 0;font-size:28px;">🔥 Strong Candidate Detected</h1>
+      <p style="margin:8px 0 0;font-size:16px;color:#d1d5db;">{{7.result.address}}, {{7.result.city}}</p>
+    </div>
+
+    <div style="padding:28px 32px;">
+
+      <div style="background:#ecfdf5;border:1px solid #10b981;border-radius:14px;padding:18px;margin-bottom:24px;">
+        <div style="font-size:14px;color:#047857;font-weight:bold;">RECOMMENDATION</div>
+        <div style="font-size:24px;font-weight:bold;color:#065f46;margin-top:6px;">Submit Offer</div>
+        <p style="margin:8px 0 0;color:#065f46;">This property meets your underwriting criteria at the recommended purchase price.</p>
+      </div>
+
+      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:24px;">
+        <tr>
+          <td style="padding:12px;background:#f9fafb;border:1px solid #e5e7eb;"><b>Asking Price</b><br>${{7.result.asking_price}}</td>
+          <td style="padding:12px;background:#f9fafb;border:1px solid #e5e7eb;"><b>Estimated ARV</b><br>${{36.result.recommended_arv}}</td>
+        </tr>
+        <tr>
+          <td style="padding:12px;background:#f9fafb;border:1px solid #e5e7eb;"><b>Recommended Offer</b><br>${{36.result.recommended_purchase_price}}</td>
+          <td style="padding:12px;background:#f9fafb;border:1px solid #e5e7eb;"><b>Projected Profit</b><br>${{36.result.projected_profit}}</td>
+        </tr>
+        <tr>
+          <td style="padding:12px;background:#f9fafb;border:1px solid #e5e7eb;"><b>Rehab Estimate</b><br>${{36.result.rehab_estimate}}</td>
+          <td style="padding:12px;background:#f9fafb;border:1px solid #e5e7eb;"><b>Cash Required</b><br>${{36.result.cash_required}}</td>
+        </tr>
+      </table>
+
+      <h2 style="font-size:20px;margin:0 0 12px;">🤖 AI Investment Summary</h2>
+      <div style="background:#f9fafb;border-left:4px solid #2563eb;padding:16px;margin-bottom:24px;line-height:1.5;">
+        {{38.result}}
+      </div>
+
+      <h2 style="font-size:20px;margin:0 0 12px;">📊 Underwriting Breakdown</h2>
+      <table width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;margin-bottom:24px;">
+        <tr><td style="padding:10px;border-bottom:1px solid #e5e7eb;">Hard Money Loan</td><td style="padding:10px;border-bottom:1px solid #e5e7eb;text-align:right;">${{36.result.hard_money_loan}}</td></tr>
+        <tr><td style="padding:10px;border-bottom:1px solid #e5e7eb;">Hard Money Points</td><td style="padding:10px;border-bottom:1px solid #e5e7eb;text-align:right;">${{36.result.hard_money_points}}</td></tr>
+        <tr><td style="padding:10px;border-bottom:1px solid #e5e7eb;">Hard Money Interest</td><td style="padding:10px;border-bottom:1px solid #e5e7eb;text-align:right;">${{36.result.hard_money_interest}}</td></tr>
+        <tr><td style="padding:10px;border-bottom:1px solid #e5e7eb;">GAP Loan</td><td style="padding:10px;border-bottom:1px solid #e5e7eb;text-align:right;">${{36.result.gap_loan}}</td></tr>
+        <tr><td style="padding:10px;border-bottom:1px solid #e5e7eb;">GAP Interest</td><td style="padding:10px;border-bottom:1px solid #e5e7eb;text-align:right;">${{36.result.gap_interest}}</td></tr>
+        <tr><td style="padding:10px;border-bottom:1px solid #e5e7eb;">Total Project Cost</td><td style="padding:10px;border-bottom:1px solid #e5e7eb;text-align:right;">${{36.result.total_project_cost}}</td></tr>
+        <tr><td style="padding:10px;border-bottom:1px solid #e5e7eb;"><b>Projected Profit %</b></td><td style="padding:10px;border-bottom:1px solid #e5e7eb;text-align:right;"><b>{{36.result.projected_profit_percent}}%</b></td></tr>
+      </table>
+
+      <h2 style="font-size:20px;margin:0 0 12px;">✅ Action Checklist</h2>
+      <div style="background:#f9fafb;border:1px solid #e5e7eb;border-radius:12px;padding:16px;margin-bottom:24px;line-height:1.8;">
+        ☐ Review photos<br>
+        ☐ Verify comparable sales<br>
+        ☐ Confirm rehab scope<br>
+        ☐ Review neighborhood and flood zone<br>
+        ☐ Submit offer if due diligence checks out
+      </div>
+
+      <h2 style="font-size:20px;margin:0 0 12px;">✉️ Draft Offer to Agent</h2>
+      <div style="background:#111827;color:#ffffff;border-radius:12px;padding:18px;line-height:1.6;margin-bottom:24px;">
+        Hi Chris,<br><br>
+        Please submit an offer of <b>${{36.result.recommended_purchase_price}}</b> for:<br><br>
+        <b>{{7.result.address}}</b><br>
+        {{7.result.city}}<br><br>
+        Offer contingent upon inspection, verification of ARV, and clear title.<br><br>
+        Estimated ARV: ${{36.result.recommended_arv}}<br>
+        Estimated Rehab: ${{36.result.rehab_estimate}}<br><br>
+        Thanks,<br>
+        Abiy
+      </div>
+
+      <div style="text-align:center;margin:28px 0;">
+        <a href="{{7.result.listing_url}}" style="background:#2563eb;color:#ffffff;text-decoration:none;padding:14px 22px;border-radius:10px;font-weight:bold;display:inline-block;">
+          View Listing
+        </a>
+      </div>
+
+    </div>
+
+    <div style="background:#f3f4f6;color:#6b7280;text-align:center;padding:18px;font-size:12px;">
+      MDMGL AI Acquisitions Report<br>
+      Automated real estate lead analysis and underwriting
+    </div>
+
+  </div>
+
+</body>
+</html>
